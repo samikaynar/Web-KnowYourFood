@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Know Your Food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation semantic element -->
+  <nav class="nav-container">
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header semantic element -->
+  <header>
+    <h1>Know Your Food</h1>
+    <p>Discover what's really in your food</p>
+  </header>
+
+  <!-- Main content semantic element -->
+  <main>
+    <section class="search-section">
+      <h2>Check Food Products</h2>
+
+      <!-- Product name search ONLY -->
+      <article class="search-method">
+        <label for="product-name">Search by product name:</label><br>
+        <input type="text" name="product-name" id="product-name" placeholder="e.g Chocolate">
+        <button id="name-btn">Search</button>
+        <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+          <p>You'll be prompted for your OpenAI API key when you search</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Results section -->
+    <section id="results-section" class="results-section" style="display: none;">
+      <h2>Analysis Results</h2>
+      <div id="results-container"></div>
+    </section>
+  </main>
+
+  <!-- Footer semantic element -->
+  <footer>
+    <p>Created by Sami Kaynar</p>
+    <p>&copy; 2025 Know Your Food</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
